@@ -1,0 +1,51 @@
+.menu{
+    background: black;
+    color: white;
+}
+
+.selections{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.selection{
+    background: grey;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2px 1px transparent;
+    transition: .3s
+}
+.selection:hover{
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.selectionList{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 10px;
+}
+
+.listItem{
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.3s;
+}
+.listItem:hover{
+    cursor: pointer;
+    color: greenyellow;
+    background-image: linear-gradient(to right, transparent 20%, greenyellow,transparent 90%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 10%;
+}
+.active{
+    box-shadow: 0 0 5px 2px greenyellow;
+}

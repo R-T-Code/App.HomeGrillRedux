@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route} from 'react-router-dom';
+import style from './index.module.scss';
+
+import Nav from './components/Nav/Nav';
+import Menu from './components/Menu/Menu';
+import Orders from './components/Orders/Orders';
+import Statistics from './components/Statistics/Statistics';
+import Settings from './components/Settings/Settings';
+import Greeting from './components/Greeting/Greeting';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter basename='/projects/reactjs/home-grill'>
+        <div className="App">
+            <Nav />
+            <div className={style.content}>
+                    <Route path='/' component={Menu}/>
+                <div className={style.content__nav}>
+                    <Route exact path='/' component={Greeting}/>
+                    <Route path='/orders' component={Orders}/>
+                    <Route path='/statistics' component={Statistics}/>
+                    <Route path='/settings' component={Settings}/>
+                </div>
+            </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }

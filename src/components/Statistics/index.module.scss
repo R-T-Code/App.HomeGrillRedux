@@ -1,0 +1,39 @@
+.stats{
+    height: 100%;
+    background-image: url('../../img/i-like-food2.svg'), linear-gradient(to right, black, gray);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sales{
+    margin-top: 100px;
+    color: white;
+    background: black;
+    font-size: 40px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px white;
+}
+.list{
+    margin-top: 50px;
+    box-shadow: 0 0 10px 2px white;
+    padding: 10px;
+    background: black;
+    color: white;
+}
+.item{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sold{
+   flex: 1;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis; 
+}
+.perDay {
+    flex: 1;
+    text-align: right;
+}

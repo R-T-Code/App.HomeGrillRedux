@@ -1,0 +1,46 @@
+.tables{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    color: white;
+}
+.table{
+    align-self: start;
+    background: black;
+    padding: 20px 40px;
+    border: 2px solid transparent;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 0 5px 2px white;
+}
+
+.table:hover{
+    cursor: pointer;
+    color: greenyellow;
+}
+
+.active{
+    box-shadow: 0 0 5px 2px greenyellow;
+}
+
+.list{
+    margin-top: 5px;
+}
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    margin-top: 10px;
+    background: transparent;
+    outline: none;
+    padding: 5px 10px;
+    color: inherit;
+    border-color: currentColor;
+}
+

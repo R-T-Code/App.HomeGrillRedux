@@ -1,0 +1,35 @@
+.nav{
+    background: rgb(57, 56, 56);
+    height: 60px;
+    color: rgb(252, 241, 241);
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    align-items: center;
+}
+.name{
+    justify-self: center;
+}
+.logo{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.span{
+    color: greenyellow;
+    font-weight: bold;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.link {
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+.link:hover{
+    color: greenyellow;
+}
+
+.active{
+    color: greenyellow;
+}
